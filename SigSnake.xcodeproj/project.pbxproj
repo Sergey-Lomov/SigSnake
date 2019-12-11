@@ -1,0 +1,1025 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E093D9620DBE47000A8FE27 /* UIBezierPath+LayersShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E093D9520DBE47000A8FE27 /* UIBezierPath+LayersShapes.swift */; };
+		8E093D9920DBF49600A8FE27 /* HexagonFieldDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E093D9820DBF49600A8FE27 /* HexagonFieldDrawer.swift */; };
+		8E0DFB7820BD712E005562FD /* SquareGeometryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DFB7720BD712E005562FD /* SquareGeometryMapper.swift */; };
+		8E0DFB7A20BD95D6005562FD /* LightingDrawingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DFB7920BD95D6005562FD /* LightingDrawingController.swift */; };
+		8E0DFB7D20BDA2DE005562FD /* TileGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DFB7C20BDA2DE005562FD /* TileGradientLayer.swift */; };
+		8E0DFB9F20C053BA005562FD /* SquareVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DFB9E20C053BA005562FD /* SquareVertex.swift */; };
+		8E0DFBA120C172AF005562FD /* VerticesGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DFBA020C172AF005562FD /* VerticesGradientLayer.swift */; };
+		8E1D927420D00C9700C0BE88 /* DefaultSkylightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D927320D00C9700C0BE88 /* DefaultSkylightController.swift */; };
+		8E1D927620D01A8900C0BE88 /* LightingUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D927520D01A8900C0BE88 /* LightingUtils.swift */; };
+		8E1D927820D0239B00C0BE88 /* SkylightControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D927720D0239B00C0BE88 /* SkylightControllerFactory.swift */; };
+		8E1E8E4F20B6EAA70021C21D /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E8E4E20B6EAA70021C21D /* Geometry.swift */; };
+		8E1E8E5220B6F0900021C21D /* SquarePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E8E5120B6F0900021C21D /* SquarePoint.swift */; };
+		8E1E8E5420B6F0B80021C21D /* SquareDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E8E5320B6F0B80021C21D /* SquareDirection.swift */; };
+		8E1E8E5620B6F0CC0021C21D /* SquareField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E8E5520B6F0CC0021C21D /* SquareField.swift */; };
+		8E1E8E5820B6F14C0021C21D /* SquareGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E8E5720B6F14C0021C21D /* SquareGeometry.swift */; };
+		8E20BEBD20C355DE0065EF7D /* CIImage+ColorInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E20BEBC20C355DE0065EF7D /* CIImage+ColorInit.swift */; };
+		8E20BEBF20C737760065EF7D /* GameControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E20BEBE20C737760065EF7D /* GameControllerFactory.swift */; };
+		8E2F0E9420C7F50200A9925E /* GradientVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F0E9320C7F50200A9925E /* GradientVertex.swift */; };
+		8E55424620A9C4C30099728F /* ReasonsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55424520A9C4C30099728F /* ReasonsManager.swift */; };
+		8E55424820A9CAD00099728F /* PauseManagerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55424720A9CAD00099728F /* PauseManagerWrapper.swift */; };
+		8E55424A20A9D8640099728F /* Accelerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55424920A9D8640099728F /* Accelerator.swift */; };
+		8E55424C20A9DE710099728F /* AcceleratorDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55424B20A9DE710099728F /* AcceleratorDrawer.swift */; };
+		8E55425120AA344E0099728F /* ObjectsSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55425020AA344E0099728F /* ObjectsSequence.swift */; };
+		8E55425320AA412C0099728F /* Salak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55425220AA412C0099728F /* Salak.swift */; };
+		8E55425520AA45490099728F /* Parmesan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55425420AA45490099728F /* Parmesan.swift */; };
+		8E55425720AA45D60099728F /* ParmesanWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55425620AA45D60099728F /* ParmesanWall.swift */; };
+		8E55425920AA46440099728F /* ParmesanDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55425820AA46440099728F /* ParmesanDrawer.swift */; };
+		8E55425B20AA53940099728F /* ParmesanSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55425A20AA53940099728F /* ParmesanSequence.swift */; };
+		8E55425F20AA63740099728F /* ParmesanWallDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55425E20AA63740099728F /* ParmesanWallDrawer.swift */; };
+		8E59117A20DBCAA70034450B /* HexagonPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59117920DBCAA70034450B /* HexagonPoint.swift */; };
+		8E59117C20DBCB3B0034450B /* HexagonDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59117B20DBCB3B0034450B /* HexagonDirection.swift */; };
+		8E59117E20DBCD580034450B /* HexagonField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59117D20DBCD580034450B /* HexagonField.swift */; };
+		8E59118020DBCE9A0034450B /* HexagonGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59117F20DBCE9A0034450B /* HexagonGeometry.swift */; };
+		8E59118220DBD0970034450B /* HexagonVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59118120DBD0970034450B /* HexagonVertex.swift */; };
+		8E59118420DBD5AB0034450B /* HexagonGeometryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59118320DBD5AB0034450B /* HexagonGeometryMapper.swift */; };
+		8E7ACC9620D07FAC002BE214 /* GradientLightingTileDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7ACC9520D07FAC002BE214 /* GradientLightingTileDrawer.swift */; };
+		8E7ACC9820D27031002BE214 /* MedusaVirus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7ACC9720D27031002BE214 /* MedusaVirus.swift */; };
+		8E7ACC9A20D27E98002BE214 /* MedusaVirusDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7ACC9920D27E98002BE214 /* MedusaVirusDrawer.swift */; };
+		8E7ACCBE20D2D449002BE214 /* MedusaVirusLayersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7ACCBD20D2D449002BE214 /* MedusaVirusLayersFactory.swift */; };
+		8E7ACCC220D2E9FD002BE214 /* GameObjectDrawersZGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7ACCC120D2E9FD002BE214 /* GameObjectDrawersZGroup.swift */; };
+		8E7ACCC420D3F8E5002BE214 /* MedusaInfectionEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7ACCC320D3F8E5002BE214 /* MedusaInfectionEffect.swift */; };
+		8E7ACCC720D7EF28002BE214 /* ObjectsGeneratorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7ACCC620D7EF28002BE214 /* ObjectsGeneratorNode.swift */; };
+		8E7ACCCA20D7F6D2002BE214 /* AcceleratorGeneratorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7ACCC920D7F6D2002BE214 /* AcceleratorGeneratorNode.swift */; };
+		8E7ACCCC20D7FAFC002BE214 /* MedusaVirusGeneratorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7ACCCB20D7FAFC002BE214 /* MedusaVirusGeneratorNode.swift */; };
+		8E7ACCD320D948E2002BE214 /* MedusaColonyEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7ACCD220D948E2002BE214 /* MedusaColonyEffect.swift */; };
+		8E7ACCD720DB1798002BE214 /* SolidInteractionTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7ACCD620DB1798002BE214 /* SolidInteractionTranslator.swift */; };
+		8E7ACCD920DB1D70002BE214 /* InteractionTranslatorsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7ACCD820DB1D70002BE214 /* InteractionTranslatorsFactory.swift */; };
+		8E7ACCDB20DB1E53002BE214 /* AngleConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7ACCDA20DB1E53002BE214 /* AngleConvert.swift */; };
+		8E7ACCDD20DB2B87002BE214 /* UserInteractorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7ACCDC20DB2B86002BE214 /* UserInteractorFactory.swift */; };
+		8E88C05220BCC16C000DD60D /* GeometryMapperFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E88C05120BCC16C000DD60D /* GeometryMapperFactory.swift */; };
+		8E92B96020AB856C00183376 /* GameEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B95F20AB856C00183376 /* GameEvent.swift */; };
+		8E92B96220AB86B400183376 /* GameEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B96120AB86B400183376 /* GameEffect.swift */; };
+		8E92B96420AB8B6D00183376 /* FreezeEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B96320AB8B6D00183376 /* FreezeEffect.swift */; };
+		8E92B96620AC423800183376 /* DefaultGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B96520AC423800183376 /* DefaultGameController.swift */; };
+		8E92B96820ACE7FD00183376 /* ControlInversionEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B96720ACE7FD00183376 /* ControlInversionEffect.swift */; };
+		8E92B96A20ACE85300183376 /* ChangeSnakeDirectionEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B96920ACE85300183376 /* ChangeSnakeDirectionEvent.swift */; };
+		8E92B96C20ACF21400183376 /* Yogurt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B96B20ACF21400183376 /* Yogurt.swift */; };
+		8E92B96E20ACF3BC00183376 /* FermentedYogurt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B96D20ACF3BC00183376 /* FermentedYogurt.swift */; };
+		8E92B97020AD1F2A00183376 /* YogurtDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B96F20AD1F2A00183376 /* YogurtDrawer.swift */; };
+		8E92B97220AD911700183376 /* FermentedYogurtDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B97120AD911700183376 /* FermentedYogurtDrawer.swift */; };
+		8E92B97420AD9B2100183376 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B97320AD9B2100183376 /* Random.swift */; };
+		8E92B97620ADB6C100183376 /* YogurtSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B97520ADB6C100183376 /* YogurtSequence.swift */; };
+		8E92B97B20AEDC4900183376 /* CollisionSnakeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B97A20AEDC4900183376 /* CollisionSnakeEvent.swift */; };
+		8E92B97D20AEE11F00183376 /* SnakeEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B97C20AEE11F00183376 /* SnakeEffect.swift */; };
+		8E92B97F20AEE43E00183376 /* SnakeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B97E20AEE43E00183376 /* SnakeEvent.swift */; };
+		8E92B98120AEE54A00183376 /* GameEventMutators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B98020AEE54A00183376 /* GameEventMutators.swift */; };
+		8E92B98320AF71BB00183376 /* CorpseSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B98220AF71BA00183376 /* CorpseSegment.swift */; };
+		8E92B98720AF83A500183376 /* CorpseDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B98620AF83A500183376 /* CorpseDrawer.swift */; };
+		8E92B98920AF847300183376 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B98820AF847300183376 /* ColorExtension.swift */; };
+		8E92B98B20AF8AD800183376 /* DieSnakeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B98A20AF8AD800183376 /* DieSnakeEvent.swift */; };
+		8E92B98D20AFA0B900183376 /* OutOfFieldSnakeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B98C20AFA0B900183376 /* OutOfFieldSnakeEvent.swift */; };
+		8E92B98F20AFB30600183376 /* DefaultSnake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B98E20AFB30600183376 /* DefaultSnake.swift */; };
+		8E92B99120B02D1800183376 /* CutSnakeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B99020B02D1700183376 /* CutSnakeEvent.swift */; };
+		8E92B99320B02DAF00183376 /* UraborosEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B99220B02DAF00183376 /* UraborosEffect.swift */; };
+		8E92B99520B0443000183376 /* Uraboros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B99420B0443000183376 /* Uraboros.swift */; };
+		8E92B99720B0482200183376 /* UraborosDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B99620B0482200183376 /* UraborosDrawer.swift */; };
+		8E92B99C20B3957A00183376 /* LightingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B99B20B3957A00183376 /* LightingController.swift */; };
+		8E92B9A020B4501600183376 /* LightingSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92B99F20B4501500183376 /* LightingSource.swift */; };
+		8E95575920C976EF00819156 /* SkylightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E95575820C976EF00819156 /* SkylightController.swift */; };
+		8E9EB2D120B5A02500A9F024 /* LightingTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9EB2D020B5A02500A9F024 /* LightingTile.swift */; };
+		8E9EB2D320B5B34800A9F024 /* LightingDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9EB2D220B5B34800A9F024 /* LightingDescription.swift */; };
+		8E9EB2D720B5B88400A9F024 /* LightingMixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9EB2D620B5B88400A9F024 /* LightingMixer.swift */; };
+		8E9EB2DB20B5BEC400A9F024 /* LightingColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9EB2DA20B5BEC400A9F024 /* LightingColor.swift */; };
+		8EAB384620E1A1CE0032EB98 /* UIBezierPath+Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAB384520E1A1CE0032EB98 /* UIBezierPath+Polygon.swift */; };
+		8EAB384B20E2D59B0032EB98 /* SensorViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAB384A20E2D59B0032EB98 /* SensorViewFactory.swift */; };
+		8EAB384E20E2D5F00032EB98 /* SensorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAB384D20E2D5F00032EB98 /* SensorView.swift */; };
+		8EAB385020E2DA2C0032EB98 /* SegmentedSensorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAB384F20E2DA2C0032EB98 /* SegmentedSensorView.swift */; };
+		8EBC3DA820B777D9005FA782 /* Normalisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBC3DA720B777D9005FA782 /* Normalisation.swift */; };
+		8EC3584D20B71E2400B3151B /* LightingTileDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC3584C20B71E2400B3151B /* LightingTileDrawer.swift */; };
+		8ED2542F20A240AF000CBA5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2542E20A240AF000CBA5F /* AppDelegate.swift */; };
+		8ED2543120A240AF000CBA5F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2543020A240AF000CBA5F /* GameViewController.swift */; };
+		8ED2543420A240AF000CBA5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2543220A240AF000CBA5F /* Main.storyboard */; };
+		8ED2543620A240B3000CBA5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2543520A240B3000CBA5F /* Assets.xcassets */; };
+		8ED2543920A240B3000CBA5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2543720A240B3000CBA5F /* LaunchScreen.storyboard */; };
+		8ED2544220A24187000CBA5F /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2544120A24187000CBA5F /* GameController.swift */; };
+		8ED2544420A241DA000CBA5F /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2544320A241DA000CBA5F /* GameObject.swift */; };
+		8ED2544720A24332000CBA5F /* SnakeSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2544620A24332000CBA5F /* SnakeSegment.swift */; };
+		8ED2545020A246E1000CBA5F /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2544F20A246E1000CBA5F /* Wall.swift */; };
+		8ED2545220A2484C000CBA5F /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2545120A2484C000CBA5F /* Food.swift */; };
+		8ED2545620A2512A000CBA5F /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2545520A2512A000CBA5F /* Snake.swift */; };
+		8ED2545820A44B5E000CBA5F /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2545720A44B5E000CBA5F /* Point.swift */; };
+		8ED2545E20A47B89000CBA5F /* StepsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2545D20A47B89000CBA5F /* StepsController.swift */; };
+		8ED2546420A484D5000CBA5F /* DrawingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2546320A484D5000CBA5F /* DrawingController.swift */; };
+		8ED2546920A48655000CBA5F /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2546820A48655000CBA5F /* Drawer.swift */; };
+		8ED2546B20A488ED000CBA5F /* SquareFieldDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2546A20A488ED000CBA5F /* SquareFieldDrawer.swift */; };
+		8ED2546D20A48A78000CBA5F /* ColorMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2546C20A48A78000CBA5F /* ColorMap.swift */; };
+		8ED2547020A49038000CBA5F /* PartyEngineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2546F20A49038000CBA5F /* PartyEngineController.swift */; };
+		8ED2547220A490A9000CBA5F /* DrawingControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2547120A490A9000CBA5F /* DrawingControllerFactory.swift */; };
+		8ED2547420A49304000CBA5F /* StepsControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2547320A49304000CBA5F /* StepsControllerFactory.swift */; };
+		8ED2547620A497E5000CBA5F /* SnakeBodyDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2547520A497E5000CBA5F /* SnakeBodyDrawer.swift */; };
+		8ED2547820A49E2B000CBA5F /* GeometryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2547720A49E2B000CBA5F /* GeometryMapper.swift */; };
+		8ED2547A20A4A044000CBA5F /* SnakeDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2547920A4A044000CBA5F /* SnakeDrawer.swift */; };
+		8ED2547C20A4A87C000CBA5F /* SnakeHeadDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2547B20A4A87C000CBA5F /* SnakeHeadDrawer.swift */; };
+		8ED2547E20A4AD6A000CBA5F /* UserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2547D20A4AD6A000CBA5F /* UserInteractor.swift */; };
+		8ED2548120A4AE87000CBA5F /* ViewTapControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2548020A4AE87000CBA5F /* ViewTapControl.swift */; };
+		8ED2548320A4D34B000CBA5F /* SalakDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2548220A4D34B000CBA5F /* SalakDrawer.swift */; };
+		8ED2548520A4DCF2000CBA5F /* WallDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2548420A4DCF2000CBA5F /* WallDrawer.swift */; };
+		8ED2548720A4FD76000CBA5F /* GameObjectDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2548620A4FD76000CBA5F /* GameObjectDrawer.swift */; };
+		8ED2548920A510F2000CBA5F /* ObjectsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2548820A510F2000CBA5F /* ObjectsGenerator.swift */; };
+		8ED2548C20A518DB000CBA5F /* ObjectsGeneratorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2548B20A518DB000CBA5F /* ObjectsGeneratorFactory.swift */; };
+		8ED2548F20A51FB4000CBA5F /* Array+AdvancedOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2548E20A51FB4000CBA5F /* Array+AdvancedOperations.swift */; };
+		8ED2549120A526A9000CBA5F /* TemporalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2549020A526A9000CBA5F /* TemporalObject.swift */; };
+		8ED2549320A5281E000CBA5F /* TemporalObjectDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2549220A5281E000CBA5F /* TemporalObjectDrawer.swift */; };
+		8ED2549520A5B2BC000CBA5F /* AttachableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2549420A5B2BC000CBA5F /* AttachableObject.swift */; };
+		8ED2549720A5B709000CBA5F /* Freezer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2549620A5B709000CBA5F /* Freezer.swift */; };
+		8ED2549920A5D3EB000CBA5F /* FreezerDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2549820A5D3EB000CBA5F /* FreezerDrawer.swift */; };
+		8ED2549D20A5FD7B000CBA5F /* AttachableObjectDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2549C20A5FD7B000CBA5F /* AttachableObjectDrawer.swift */; };
+		8ED254A120A7AE40000CBA5F /* GameTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED254A020A7AE40000CBA5F /* GameTimer.swift */; };
+		8ED254A520A7BB3F000CBA5F /* RealtimeTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED254A420A7BB3F000CBA5F /* RealtimeTimer.swift */; };
+		8ED254A720A890B2000CBA5F /* ObjectAnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED254A620A890B2000CBA5F /* ObjectAnimationFactory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E093D9520DBE47000A8FE27 /* UIBezierPath+LayersShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+LayersShapes.swift"; sourceTree = "<group>"; };
+		8E093D9820DBF49600A8FE27 /* HexagonFieldDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonFieldDrawer.swift; sourceTree = "<group>"; };
+		8E0DFB7720BD712E005562FD /* SquareGeometryMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareGeometryMapper.swift; sourceTree = "<group>"; };
+		8E0DFB7920BD95D6005562FD /* LightingDrawingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightingDrawingController.swift; sourceTree = "<group>"; };
+		8E0DFB7C20BDA2DE005562FD /* TileGradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileGradientLayer.swift; sourceTree = "<group>"; };
+		8E0DFB9E20C053BA005562FD /* SquareVertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareVertex.swift; sourceTree = "<group>"; };
+		8E0DFBA020C172AF005562FD /* VerticesGradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticesGradientLayer.swift; sourceTree = "<group>"; };
+		8E1D927320D00C9700C0BE88 /* DefaultSkylightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSkylightController.swift; sourceTree = "<group>"; };
+		8E1D927520D01A8900C0BE88 /* LightingUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightingUtils.swift; sourceTree = "<group>"; };
+		8E1D927720D0239B00C0BE88 /* SkylightControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylightControllerFactory.swift; sourceTree = "<group>"; };
+		8E1E8E4E20B6EAA70021C21D /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		8E1E8E5120B6F0900021C21D /* SquarePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquarePoint.swift; sourceTree = "<group>"; };
+		8E1E8E5320B6F0B80021C21D /* SquareDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareDirection.swift; sourceTree = "<group>"; };
+		8E1E8E5520B6F0CC0021C21D /* SquareField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareField.swift; sourceTree = "<group>"; };
+		8E1E8E5720B6F14C0021C21D /* SquareGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareGeometry.swift; sourceTree = "<group>"; };
+		8E20BEBC20C355DE0065EF7D /* CIImage+ColorInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+ColorInit.swift"; sourceTree = "<group>"; };
+		8E20BEBE20C737760065EF7D /* GameControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameControllerFactory.swift; sourceTree = "<group>"; };
+		8E2F0E9320C7F50200A9925E /* GradientVertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientVertex.swift; sourceTree = "<group>"; };
+		8E55424520A9C4C30099728F /* ReasonsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonsManager.swift; sourceTree = "<group>"; };
+		8E55424720A9CAD00099728F /* PauseManagerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseManagerWrapper.swift; sourceTree = "<group>"; };
+		8E55424920A9D8640099728F /* Accelerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accelerator.swift; sourceTree = "<group>"; };
+		8E55424B20A9DE710099728F /* AcceleratorDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceleratorDrawer.swift; sourceTree = "<group>"; };
+		8E55425020AA344E0099728F /* ObjectsSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsSequence.swift; sourceTree = "<group>"; };
+		8E55425220AA412C0099728F /* Salak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salak.swift; sourceTree = "<group>"; };
+		8E55425420AA45490099728F /* Parmesan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parmesan.swift; sourceTree = "<group>"; };
+		8E55425620AA45D60099728F /* ParmesanWall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParmesanWall.swift; sourceTree = "<group>"; };
+		8E55425820AA46440099728F /* ParmesanDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParmesanDrawer.swift; sourceTree = "<group>"; };
+		8E55425A20AA53940099728F /* ParmesanSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParmesanSequence.swift; sourceTree = "<group>"; };
+		8E55425E20AA63740099728F /* ParmesanWallDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParmesanWallDrawer.swift; sourceTree = "<group>"; };
+		8E59117920DBCAA70034450B /* HexagonPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonPoint.swift; sourceTree = "<group>"; };
+		8E59117B20DBCB3B0034450B /* HexagonDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonDirection.swift; sourceTree = "<group>"; };
+		8E59117D20DBCD580034450B /* HexagonField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonField.swift; sourceTree = "<group>"; };
+		8E59117F20DBCE9A0034450B /* HexagonGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonGeometry.swift; sourceTree = "<group>"; };
+		8E59118120DBD0970034450B /* HexagonVertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonVertex.swift; sourceTree = "<group>"; };
+		8E59118320DBD5AB0034450B /* HexagonGeometryMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonGeometryMapper.swift; sourceTree = "<group>"; };
+		8E7ACC9520D07FAC002BE214 /* GradientLightingTileDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLightingTileDrawer.swift; sourceTree = "<group>"; };
+		8E7ACC9720D27031002BE214 /* MedusaVirus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedusaVirus.swift; sourceTree = "<group>"; };
+		8E7ACC9920D27E98002BE214 /* MedusaVirusDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedusaVirusDrawer.swift; sourceTree = "<group>"; };
+		8E7ACCBD20D2D449002BE214 /* MedusaVirusLayersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedusaVirusLayersFactory.swift; sourceTree = "<group>"; };
+		8E7ACCC120D2E9FD002BE214 /* GameObjectDrawersZGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObjectDrawersZGroup.swift; sourceTree = "<group>"; };
+		8E7ACCC320D3F8E5002BE214 /* MedusaInfectionEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedusaInfectionEffect.swift; sourceTree = "<group>"; };
+		8E7ACCC620D7EF28002BE214 /* ObjectsGeneratorNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsGeneratorNode.swift; sourceTree = "<group>"; };
+		8E7ACCC920D7F6D2002BE214 /* AcceleratorGeneratorNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceleratorGeneratorNode.swift; sourceTree = "<group>"; };
+		8E7ACCCB20D7FAFC002BE214 /* MedusaVirusGeneratorNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedusaVirusGeneratorNode.swift; sourceTree = "<group>"; };
+		8E7ACCD220D948E2002BE214 /* MedusaColonyEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedusaColonyEffect.swift; sourceTree = "<group>"; };
+		8E7ACCD620DB1798002BE214 /* SolidInteractionTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidInteractionTranslator.swift; sourceTree = "<group>"; };
+		8E7ACCD820DB1D70002BE214 /* InteractionTranslatorsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionTranslatorsFactory.swift; sourceTree = "<group>"; };
+		8E7ACCDA20DB1E53002BE214 /* AngleConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleConvert.swift; sourceTree = "<group>"; };
+		8E7ACCDC20DB2B86002BE214 /* UserInteractorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractorFactory.swift; sourceTree = "<group>"; };
+		8E88C05120BCC16C000DD60D /* GeometryMapperFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryMapperFactory.swift; sourceTree = "<group>"; };
+		8E92B95F20AB856C00183376 /* GameEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEvent.swift; sourceTree = "<group>"; };
+		8E92B96120AB86B400183376 /* GameEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEffect.swift; sourceTree = "<group>"; };
+		8E92B96320AB8B6D00183376 /* FreezeEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreezeEffect.swift; sourceTree = "<group>"; };
+		8E92B96520AC423800183376 /* DefaultGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGameController.swift; sourceTree = "<group>"; };
+		8E92B96720ACE7FD00183376 /* ControlInversionEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlInversionEffect.swift; sourceTree = "<group>"; };
+		8E92B96920ACE85300183376 /* ChangeSnakeDirectionEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSnakeDirectionEvent.swift; sourceTree = "<group>"; };
+		8E92B96B20ACF21400183376 /* Yogurt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yogurt.swift; sourceTree = "<group>"; };
+		8E92B96D20ACF3BC00183376 /* FermentedYogurt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FermentedYogurt.swift; sourceTree = "<group>"; };
+		8E92B96F20AD1F2A00183376 /* YogurtDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogurtDrawer.swift; sourceTree = "<group>"; };
+		8E92B97120AD911700183376 /* FermentedYogurtDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FermentedYogurtDrawer.swift; sourceTree = "<group>"; };
+		8E92B97320AD9B2100183376 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		8E92B97520ADB6C100183376 /* YogurtSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogurtSequence.swift; sourceTree = "<group>"; };
+		8E92B97A20AEDC4900183376 /* CollisionSnakeEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionSnakeEvent.swift; sourceTree = "<group>"; };
+		8E92B97C20AEE11F00183376 /* SnakeEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeEffect.swift; sourceTree = "<group>"; };
+		8E92B97E20AEE43E00183376 /* SnakeEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeEvent.swift; sourceTree = "<group>"; };
+		8E92B98020AEE54A00183376 /* GameEventMutators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEventMutators.swift; sourceTree = "<group>"; };
+		8E92B98220AF71BA00183376 /* CorpseSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorpseSegment.swift; sourceTree = "<group>"; };
+		8E92B98620AF83A500183376 /* CorpseDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorpseDrawer.swift; sourceTree = "<group>"; };
+		8E92B98820AF847300183376 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		8E92B98A20AF8AD800183376 /* DieSnakeEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DieSnakeEvent.swift; sourceTree = "<group>"; };
+		8E92B98C20AFA0B900183376 /* OutOfFieldSnakeEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutOfFieldSnakeEvent.swift; sourceTree = "<group>"; };
+		8E92B98E20AFB30600183376 /* DefaultSnake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSnake.swift; sourceTree = "<group>"; };
+		8E92B99020B02D1700183376 /* CutSnakeEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutSnakeEvent.swift; sourceTree = "<group>"; };
+		8E92B99220B02DAF00183376 /* UraborosEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UraborosEffect.swift; sourceTree = "<group>"; };
+		8E92B99420B0443000183376 /* Uraboros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uraboros.swift; sourceTree = "<group>"; };
+		8E92B99620B0482200183376 /* UraborosDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UraborosDrawer.swift; sourceTree = "<group>"; };
+		8E92B99B20B3957A00183376 /* LightingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightingController.swift; sourceTree = "<group>"; };
+		8E92B99F20B4501500183376 /* LightingSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightingSource.swift; sourceTree = "<group>"; };
+		8E95575820C976EF00819156 /* SkylightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkylightController.swift; sourceTree = "<group>"; };
+		8E9EB2D020B5A02500A9F024 /* LightingTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightingTile.swift; sourceTree = "<group>"; };
+		8E9EB2D220B5B34800A9F024 /* LightingDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightingDescription.swift; sourceTree = "<group>"; };
+		8E9EB2D620B5B88400A9F024 /* LightingMixer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightingMixer.swift; sourceTree = "<group>"; };
+		8E9EB2DA20B5BEC400A9F024 /* LightingColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightingColor.swift; sourceTree = "<group>"; };
+		8EAB384520E1A1CE0032EB98 /* UIBezierPath+Polygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Polygon.swift"; sourceTree = "<group>"; };
+		8EAB384A20E2D59B0032EB98 /* SensorViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorViewFactory.swift; sourceTree = "<group>"; };
+		8EAB384D20E2D5F00032EB98 /* SensorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorView.swift; sourceTree = "<group>"; };
+		8EAB384F20E2DA2C0032EB98 /* SegmentedSensorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedSensorView.swift; sourceTree = "<group>"; };
+		8EBC3DA720B777D9005FA782 /* Normalisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Normalisation.swift; sourceTree = "<group>"; };
+		8EC3584C20B71E2400B3151B /* LightingTileDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightingTileDrawer.swift; sourceTree = "<group>"; };
+		8ED2542B20A240AF000CBA5F /* SigSnake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SigSnake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED2542E20A240AF000CBA5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8ED2543020A240AF000CBA5F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		8ED2543320A240AF000CBA5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8ED2543520A240B3000CBA5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8ED2543820A240B3000CBA5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8ED2543A20A240B3000CBA5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ED2544120A24187000CBA5F /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		8ED2544320A241DA000CBA5F /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		8ED2544620A24332000CBA5F /* SnakeSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeSegment.swift; sourceTree = "<group>"; };
+		8ED2544F20A246E1000CBA5F /* Wall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
+		8ED2545120A2484C000CBA5F /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		8ED2545520A2512A000CBA5F /* Snake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
+		8ED2545720A44B5E000CBA5F /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		8ED2545D20A47B89000CBA5F /* StepsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsController.swift; sourceTree = "<group>"; };
+		8ED2546320A484D5000CBA5F /* DrawingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingController.swift; sourceTree = "<group>"; };
+		8ED2546820A48655000CBA5F /* Drawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawer.swift; sourceTree = "<group>"; };
+		8ED2546A20A488ED000CBA5F /* SquareFieldDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareFieldDrawer.swift; sourceTree = "<group>"; };
+		8ED2546C20A48A78000CBA5F /* ColorMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMap.swift; sourceTree = "<group>"; };
+		8ED2546F20A49038000CBA5F /* PartyEngineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyEngineController.swift; sourceTree = "<group>"; };
+		8ED2547120A490A9000CBA5F /* DrawingControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingControllerFactory.swift; sourceTree = "<group>"; };
+		8ED2547320A49304000CBA5F /* StepsControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsControllerFactory.swift; sourceTree = "<group>"; };
+		8ED2547520A497E5000CBA5F /* SnakeBodyDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeBodyDrawer.swift; sourceTree = "<group>"; };
+		8ED2547720A49E2B000CBA5F /* GeometryMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryMapper.swift; sourceTree = "<group>"; };
+		8ED2547920A4A044000CBA5F /* SnakeDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeDrawer.swift; sourceTree = "<group>"; };
+		8ED2547B20A4A87C000CBA5F /* SnakeHeadDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeHeadDrawer.swift; sourceTree = "<group>"; };
+		8ED2547D20A4AD6A000CBA5F /* UserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractor.swift; sourceTree = "<group>"; };
+		8ED2548020A4AE87000CBA5F /* ViewTapControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTapControl.swift; sourceTree = "<group>"; };
+		8ED2548220A4D34B000CBA5F /* SalakDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalakDrawer.swift; sourceTree = "<group>"; };
+		8ED2548420A4DCF2000CBA5F /* WallDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallDrawer.swift; sourceTree = "<group>"; };
+		8ED2548620A4FD76000CBA5F /* GameObjectDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObjectDrawer.swift; sourceTree = "<group>"; };
+		8ED2548820A510F2000CBA5F /* ObjectsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsGenerator.swift; sourceTree = "<group>"; };
+		8ED2548B20A518DB000CBA5F /* ObjectsGeneratorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsGeneratorFactory.swift; sourceTree = "<group>"; };
+		8ED2548E20A51FB4000CBA5F /* Array+AdvancedOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+AdvancedOperations.swift"; sourceTree = "<group>"; };
+		8ED2549020A526A9000CBA5F /* TemporalObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporalObject.swift; sourceTree = "<group>"; };
+		8ED2549220A5281E000CBA5F /* TemporalObjectDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporalObjectDrawer.swift; sourceTree = "<group>"; };
+		8ED2549420A5B2BC000CBA5F /* AttachableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachableObject.swift; sourceTree = "<group>"; };
+		8ED2549620A5B709000CBA5F /* Freezer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Freezer.swift; sourceTree = "<group>"; };
+		8ED2549820A5D3EB000CBA5F /* FreezerDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreezerDrawer.swift; sourceTree = "<group>"; };
+		8ED2549C20A5FD7B000CBA5F /* AttachableObjectDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachableObjectDrawer.swift; sourceTree = "<group>"; };
+		8ED254A020A7AE40000CBA5F /* GameTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimer.swift; sourceTree = "<group>"; };
+		8ED254A420A7BB3F000CBA5F /* RealtimeTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeTimer.swift; sourceTree = "<group>"; };
+		8ED254A620A890B2000CBA5F /* ObjectAnimationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectAnimationFactory.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8ED2542820A240AF000CBA5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E093D9720DBF3CE00A8FE27 /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				8ED2546A20A488ED000CBA5F /* SquareFieldDrawer.swift */,
+				8E093D9820DBF49600A8FE27 /* HexagonFieldDrawer.swift */,
+			);
+			path = Fields;
+			sourceTree = "<group>";
+		};
+		8E0DFB7B20BDA2CB005562FD /* DrawingUtils */ = {
+			isa = PBXGroup;
+			children = (
+				8E0DFB7C20BDA2DE005562FD /* TileGradientLayer.swift */,
+				8E2F0E9320C7F50200A9925E /* GradientVertex.swift */,
+				8E0DFBA020C172AF005562FD /* VerticesGradientLayer.swift */,
+				8ED254A620A890B2000CBA5F /* ObjectAnimationFactory.swift */,
+				8E7ACCBD20D2D449002BE214 /* MedusaVirusLayersFactory.swift */,
+				8E7ACCC120D2E9FD002BE214 /* GameObjectDrawersZGroup.swift */,
+				8E093D9520DBE47000A8FE27 /* UIBezierPath+LayersShapes.swift */,
+			);
+			path = DrawingUtils;
+			sourceTree = "<group>";
+		};
+		8E1E8E5020B6F01F0021C21D /* Square */ = {
+			isa = PBXGroup;
+			children = (
+				8E1E8E5120B6F0900021C21D /* SquarePoint.swift */,
+				8E1E8E5320B6F0B80021C21D /* SquareDirection.swift */,
+				8E0DFB9E20C053BA005562FD /* SquareVertex.swift */,
+				8E1E8E5520B6F0CC0021C21D /* SquareField.swift */,
+				8E1E8E5720B6F14C0021C21D /* SquareGeometry.swift */,
+			);
+			path = Square;
+			sourceTree = "<group>";
+		};
+		8E55424F20AA342F0099728F /* Sequences */ = {
+			isa = PBXGroup;
+			children = (
+				8E55425020AA344E0099728F /* ObjectsSequence.swift */,
+				8E55425A20AA53940099728F /* ParmesanSequence.swift */,
+				8E92B97520ADB6C100183376 /* YogurtSequence.swift */,
+			);
+			path = Sequences;
+			sourceTree = "<group>";
+		};
+		8E59117820DBCA650034450B /* Hexagon */ = {
+			isa = PBXGroup;
+			children = (
+				8E59117920DBCAA70034450B /* HexagonPoint.swift */,
+				8E59117B20DBCB3B0034450B /* HexagonDirection.swift */,
+				8E59118120DBD0970034450B /* HexagonVertex.swift */,
+				8E59117D20DBCD580034450B /* HexagonField.swift */,
+				8E59117F20DBCE9A0034450B /* HexagonGeometry.swift */,
+			);
+			path = Hexagon;
+			sourceTree = "<group>";
+		};
+		8E7ACCC520D7EF03002BE214 /* ObjectsGeneration */ = {
+			isa = PBXGroup;
+			children = (
+				8E7ACCC820D7F6B2002BE214 /* Nodes */,
+				8ED2548820A510F2000CBA5F /* ObjectsGenerator.swift */,
+				8ED2548B20A518DB000CBA5F /* ObjectsGeneratorFactory.swift */,
+			);
+			path = ObjectsGeneration;
+			sourceTree = "<group>";
+		};
+		8E7ACCC820D7F6B2002BE214 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				8E7ACCC620D7EF28002BE214 /* ObjectsGeneratorNode.swift */,
+				8E7ACCC920D7F6D2002BE214 /* AcceleratorGeneratorNode.swift */,
+				8E7ACCCB20D7FAFC002BE214 /* MedusaVirusGeneratorNode.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		8E7ACCCD20D9175F002BE214 /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				8ED2544320A241DA000CBA5F /* GameObject.swift */,
+				8ED2549020A526A9000CBA5F /* TemporalObject.swift */,
+				8ED2549420A5B2BC000CBA5F /* AttachableObject.swift */,
+				8ED2544620A24332000CBA5F /* SnakeSegment.swift */,
+				8ED2544F20A246E1000CBA5F /* Wall.swift */,
+				8ED2545120A2484C000CBA5F /* Food.swift */,
+				8E92B96B20ACF21400183376 /* Yogurt.swift */,
+				8E92B96D20ACF3BC00183376 /* FermentedYogurt.swift */,
+				8ED2549620A5B709000CBA5F /* Freezer.swift */,
+				8E55424920A9D8640099728F /* Accelerator.swift */,
+				8E55425220AA412C0099728F /* Salak.swift */,
+				8E55425420AA45490099728F /* Parmesan.swift */,
+				8E55425620AA45D60099728F /* ParmesanWall.swift */,
+				8E92B98220AF71BA00183376 /* CorpseSegment.swift */,
+				8E92B99420B0443000183376 /* Uraboros.swift */,
+				8E7ACC9720D27031002BE214 /* MedusaVirus.swift */,
+			);
+			path = GameObjects;
+			sourceTree = "<group>";
+		};
+		8E88C05020BCC143000DD60D /* GeometryMapping */ = {
+			isa = PBXGroup;
+			children = (
+				8ED2547720A49E2B000CBA5F /* GeometryMapper.swift */,
+				8E88C05120BCC16C000DD60D /* GeometryMapperFactory.swift */,
+				8E0DFB7720BD712E005562FD /* SquareGeometryMapper.swift */,
+				8E59118320DBD5AB0034450B /* HexagonGeometryMapper.swift */,
+			);
+			path = GeometryMapping;
+			sourceTree = "<group>";
+		};
+		8E92B95B20AB853300183376 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				8E92B96120AB86B400183376 /* GameEffect.swift */,
+				8E92B97C20AEE11F00183376 /* SnakeEffect.swift */,
+				8E92B96320AB8B6D00183376 /* FreezeEffect.swift */,
+				8E92B96720ACE7FD00183376 /* ControlInversionEffect.swift */,
+				8E92B99220B02DAF00183376 /* UraborosEffect.swift */,
+				8E7ACCC320D3F8E5002BE214 /* MedusaInfectionEffect.swift */,
+				8E7ACCD220D948E2002BE214 /* MedusaColonyEffect.swift */,
+			);
+			path = Effects;
+			sourceTree = "<group>";
+		};
+		8E92B95E20AB856100183376 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				8E92B98020AEE54A00183376 /* GameEventMutators.swift */,
+				8E92B95F20AB856C00183376 /* GameEvent.swift */,
+				8E92B97E20AEE43E00183376 /* SnakeEvent.swift */,
+				8E92B96920ACE85300183376 /* ChangeSnakeDirectionEvent.swift */,
+				8E92B97A20AEDC4900183376 /* CollisionSnakeEvent.swift */,
+				8E92B98C20AFA0B900183376 /* OutOfFieldSnakeEvent.swift */,
+				8E92B98A20AF8AD800183376 /* DieSnakeEvent.swift */,
+				8E92B99020B02D1700183376 /* CutSnakeEvent.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		8E92B99A20B3954400183376 /* Lighting */ = {
+			isa = PBXGroup;
+			children = (
+				8E9EB2D020B5A02500A9F024 /* LightingTile.swift */,
+				8E92B99F20B4501500183376 /* LightingSource.swift */,
+				8E9EB2D220B5B34800A9F024 /* LightingDescription.swift */,
+				8E9EB2D620B5B88400A9F024 /* LightingMixer.swift */,
+				8E9EB2DA20B5BEC400A9F024 /* LightingColor.swift */,
+				8E92B99B20B3957A00183376 /* LightingController.swift */,
+				8E95575820C976EF00819156 /* SkylightController.swift */,
+				8E1D927320D00C9700C0BE88 /* DefaultSkylightController.swift */,
+				8E1D927720D0239B00C0BE88 /* SkylightControllerFactory.swift */,
+			);
+			path = Lighting;
+			sourceTree = "<group>";
+		};
+		8EAB384920E2D5760032EB98 /* GameControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8EAB384C20E2D5DA0032EB98 /* Sensors */,
+				8ED2543020A240AF000CBA5F /* GameViewController.swift */,
+			);
+			path = GameControllers;
+			sourceTree = "<group>";
+		};
+		8EAB384C20E2D5DA0032EB98 /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				8EAB384A20E2D59B0032EB98 /* SensorViewFactory.swift */,
+				8EAB384D20E2D5F00032EB98 /* SensorView.swift */,
+				8EAB384F20E2DA2C0032EB98 /* SegmentedSensorView.swift */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
+		8EC3584B20B71DF100B3151B /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				8ED2548620A4FD76000CBA5F /* GameObjectDrawer.swift */,
+				8ED2547B20A4A87C000CBA5F /* SnakeHeadDrawer.swift */,
+				8ED2547520A497E5000CBA5F /* SnakeBodyDrawer.swift */,
+				8ED2549220A5281E000CBA5F /* TemporalObjectDrawer.swift */,
+				8ED2549C20A5FD7B000CBA5F /* AttachableObjectDrawer.swift */,
+				8ED2548220A4D34B000CBA5F /* SalakDrawer.swift */,
+				8ED2548420A4DCF2000CBA5F /* WallDrawer.swift */,
+				8ED2549820A5D3EB000CBA5F /* FreezerDrawer.swift */,
+				8E55424B20A9DE710099728F /* AcceleratorDrawer.swift */,
+				8E92B96F20AD1F2A00183376 /* YogurtDrawer.swift */,
+				8E92B97120AD911700183376 /* FermentedYogurtDrawer.swift */,
+				8E55425820AA46440099728F /* ParmesanDrawer.swift */,
+				8E55425E20AA63740099728F /* ParmesanWallDrawer.swift */,
+				8E92B98620AF83A500183376 /* CorpseDrawer.swift */,
+				8E92B99620B0482200183376 /* UraborosDrawer.swift */,
+				8E7ACC9920D27E98002BE214 /* MedusaVirusDrawer.swift */,
+			);
+			path = GameObjects;
+			sourceTree = "<group>";
+		};
+		8ED2542220A240AF000CBA5F = {
+			isa = PBXGroup;
+			children = (
+				8ED2542D20A240AF000CBA5F /* SigSnake */,
+				8ED2542C20A240AF000CBA5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8ED2542C20A240AF000CBA5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8ED2542B20A240AF000CBA5F /* SigSnake.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8ED2542D20A240AF000CBA5F /* SigSnake */ = {
+			isa = PBXGroup;
+			children = (
+				8EAB384920E2D5760032EB98 /* GameControllers */,
+				8ED2548D20A51F9F000CBA5F /* Utils */,
+				8ED2544020A2416F000CBA5F /* GameEngine */,
+				8ED2542E20A240AF000CBA5F /* AppDelegate.swift */,
+				8ED2543220A240AF000CBA5F /* Main.storyboard */,
+				8ED2543520A240B3000CBA5F /* Assets.xcassets */,
+				8ED2543720A240B3000CBA5F /* LaunchScreen.storyboard */,
+				8ED2543A20A240B3000CBA5F /* Info.plist */,
+			);
+			path = SigSnake;
+			sourceTree = "<group>";
+		};
+		8ED2544020A2416F000CBA5F /* GameEngine */ = {
+			isa = PBXGroup;
+			children = (
+				8ED2549F20A7ADDC000CBA5F /* Timing */,
+				8ED2547F20A4AE72000CBA5F /* UserInteraction */,
+				8ED2546E20A49000000CBA5F /* Logic */,
+				8ED2546220A48403000CBA5F /* Drawing */,
+				8ED2546F20A49038000CBA5F /* PartyEngineController.swift */,
+			);
+			path = GameEngine;
+			sourceTree = "<group>";
+		};
+		8ED2544A20A2457D000CBA5F /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				8E59117820DBCA650034450B /* Hexagon */,
+				8E1E8E5020B6F01F0021C21D /* Square */,
+				8ED2545720A44B5E000CBA5F /* Point.swift */,
+				8E1E8E4E20B6EAA70021C21D /* Geometry.swift */,
+			);
+			path = Geometry;
+			sourceTree = "<group>";
+		};
+		8ED2546220A48403000CBA5F /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				8E0DFB7B20BDA2CB005562FD /* DrawingUtils */,
+				8E88C05020BCC143000DD60D /* GeometryMapping */,
+				8ED2546520A4860F000CBA5F /* Drawers */,
+				8ED2546320A484D5000CBA5F /* DrawingController.swift */,
+				8E0DFB7920BD95D6005562FD /* LightingDrawingController.swift */,
+				8ED2546C20A48A78000CBA5F /* ColorMap.swift */,
+				8ED2547120A490A9000CBA5F /* DrawingControllerFactory.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		8ED2546520A4860F000CBA5F /* Drawers */ = {
+			isa = PBXGroup;
+			children = (
+				8E093D9720DBF3CE00A8FE27 /* Fields */,
+				8EC3584B20B71DF100B3151B /* GameObjects */,
+				8ED2546820A48655000CBA5F /* Drawer.swift */,
+				8ED2547920A4A044000CBA5F /* SnakeDrawer.swift */,
+				8EC3584C20B71E2400B3151B /* LightingTileDrawer.swift */,
+				8E7ACC9520D07FAC002BE214 /* GradientLightingTileDrawer.swift */,
+			);
+			path = Drawers;
+			sourceTree = "<group>";
+		};
+		8ED2546E20A49000000CBA5F /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				8E7ACCC520D7EF03002BE214 /* ObjectsGeneration */,
+				8ED2544A20A2457D000CBA5F /* Geometry */,
+				8E92B99A20B3954400183376 /* Lighting */,
+				8E92B95E20AB856100183376 /* Events */,
+				8E55424F20AA342F0099728F /* Sequences */,
+				8E92B95B20AB853300183376 /* Effects */,
+				8E7ACCCD20D9175F002BE214 /* GameObjects */,
+				8ED2545520A2512A000CBA5F /* Snake.swift */,
+				8E92B98E20AFB30600183376 /* DefaultSnake.swift */,
+				8ED2544120A24187000CBA5F /* GameController.swift */,
+				8E92B96520AC423800183376 /* DefaultGameController.swift */,
+				8E20BEBE20C737760065EF7D /* GameControllerFactory.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		8ED2547F20A4AE72000CBA5F /* UserInteraction */ = {
+			isa = PBXGroup;
+			children = (
+				8ED2547D20A4AD6A000CBA5F /* UserInteractor.swift */,
+				8E7ACCDC20DB2B86002BE214 /* UserInteractorFactory.swift */,
+				8E7ACCD620DB1798002BE214 /* SolidInteractionTranslator.swift */,
+				8E7ACCD820DB1D70002BE214 /* InteractionTranslatorsFactory.swift */,
+				8ED2548020A4AE87000CBA5F /* ViewTapControl.swift */,
+			);
+			path = UserInteraction;
+			sourceTree = "<group>";
+		};
+		8ED2548D20A51F9F000CBA5F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8ED2548E20A51FB4000CBA5F /* Array+AdvancedOperations.swift */,
+				8E55424520A9C4C30099728F /* ReasonsManager.swift */,
+				8E55424720A9CAD00099728F /* PauseManagerWrapper.swift */,
+				8E92B98820AF847300183376 /* ColorExtension.swift */,
+				8E92B97320AD9B2100183376 /* Random.swift */,
+				8EBC3DA720B777D9005FA782 /* Normalisation.swift */,
+				8E20BEBC20C355DE0065EF7D /* CIImage+ColorInit.swift */,
+				8E1D927520D01A8900C0BE88 /* LightingUtils.swift */,
+				8E7ACCDA20DB1E53002BE214 /* AngleConvert.swift */,
+				8EAB384520E1A1CE0032EB98 /* UIBezierPath+Polygon.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8ED2549F20A7ADDC000CBA5F /* Timing */ = {
+			isa = PBXGroup;
+			children = (
+				8ED2545D20A47B89000CBA5F /* StepsController.swift */,
+				8ED2547320A49304000CBA5F /* StepsControllerFactory.swift */,
+				8ED254A020A7AE40000CBA5F /* GameTimer.swift */,
+				8ED254A420A7BB3F000CBA5F /* RealtimeTimer.swift */,
+			);
+			path = Timing;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8ED2542A20A240AF000CBA5F /* SigSnake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ED2543D20A240B3000CBA5F /* Build configuration list for PBXNativeTarget "SigSnake" */;
+			buildPhases = (
+				8ED2542720A240AF000CBA5F /* Sources */,
+				8ED2542820A240AF000CBA5F /* Frameworks */,
+				8ED2542920A240AF000CBA5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SigSnake;
+			productName = SigSnake;
+			productReference = 8ED2542B20A240AF000CBA5F /* SigSnake.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8ED2542320A240AF000CBA5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Sergey Lomov";
+				TargetAttributes = {
+					8ED2542A20A240AF000CBA5F = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 8ED2542620A240AF000CBA5F /* Build configuration list for PBXProject "SigSnake" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8ED2542220A240AF000CBA5F;
+			productRefGroup = 8ED2542C20A240AF000CBA5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8ED2542A20A240AF000CBA5F /* SigSnake */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8ED2542920A240AF000CBA5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED2543920A240B3000CBA5F /* LaunchScreen.storyboard in Resources */,
+				8ED2543620A240B3000CBA5F /* Assets.xcassets in Resources */,
+				8ED2543420A240AF000CBA5F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8ED2542720A240AF000CBA5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E92B99C20B3957A00183376 /* LightingController.swift in Sources */,
+				8E2F0E9420C7F50200A9925E /* GradientVertex.swift in Sources */,
+				8E0DFB9F20C053BA005562FD /* SquareVertex.swift in Sources */,
+				8E7ACCC220D2E9FD002BE214 /* GameObjectDrawersZGroup.swift in Sources */,
+				8E92B96A20ACE85300183376 /* ChangeSnakeDirectionEvent.swift in Sources */,
+				8E92B99120B02D1800183376 /* CutSnakeEvent.swift in Sources */,
+				8E1E8E4F20B6EAA70021C21D /* Geometry.swift in Sources */,
+				8E92B98D20AFA0B900183376 /* OutOfFieldSnakeEvent.swift in Sources */,
+				8ED2548C20A518DB000CBA5F /* ObjectsGeneratorFactory.swift in Sources */,
+				8ED2548F20A51FB4000CBA5F /* Array+AdvancedOperations.swift in Sources */,
+				8E92B96620AC423800183376 /* DefaultGameController.swift in Sources */,
+				8ED2548520A4DCF2000CBA5F /* WallDrawer.swift in Sources */,
+				8ED2548120A4AE87000CBA5F /* ViewTapControl.swift in Sources */,
+				8EAB384E20E2D5F00032EB98 /* SensorView.swift in Sources */,
+				8ED254A120A7AE40000CBA5F /* GameTimer.swift in Sources */,
+				8E7ACCD720DB1798002BE214 /* SolidInteractionTranslator.swift in Sources */,
+				8E0DFB7820BD712E005562FD /* SquareGeometryMapper.swift in Sources */,
+				8ED2547A20A4A044000CBA5F /* SnakeDrawer.swift in Sources */,
+				8E92B97620ADB6C100183376 /* YogurtSequence.swift in Sources */,
+				8ED2543120A240AF000CBA5F /* GameViewController.swift in Sources */,
+				8ED2544720A24332000CBA5F /* SnakeSegment.swift in Sources */,
+				8E55425720AA45D60099728F /* ParmesanWall.swift in Sources */,
+				8E7ACCDB20DB1E53002BE214 /* AngleConvert.swift in Sources */,
+				8E59118220DBD0970034450B /* HexagonVertex.swift in Sources */,
+				8E92B97B20AEDC4900183376 /* CollisionSnakeEvent.swift in Sources */,
+				8E7ACC9820D27031002BE214 /* MedusaVirus.swift in Sources */,
+				8ED2547C20A4A87C000CBA5F /* SnakeHeadDrawer.swift in Sources */,
+				8ED2544220A24187000CBA5F /* GameController.swift in Sources */,
+				8E92B96020AB856C00183376 /* GameEvent.swift in Sources */,
+				8ED2547220A490A9000CBA5F /* DrawingControllerFactory.swift in Sources */,
+				8ED2547020A49038000CBA5F /* PartyEngineController.swift in Sources */,
+				8ED2546420A484D5000CBA5F /* DrawingController.swift in Sources */,
+				8ED254A720A890B2000CBA5F /* ObjectAnimationFactory.swift in Sources */,
+				8E7ACCCA20D7F6D2002BE214 /* AcceleratorGeneratorNode.swift in Sources */,
+				8E7ACCD920DB1D70002BE214 /* InteractionTranslatorsFactory.swift in Sources */,
+				8E7ACCDD20DB2B87002BE214 /* UserInteractorFactory.swift in Sources */,
+				8ED2545220A2484C000CBA5F /* Food.swift in Sources */,
+				8EC3584D20B71E2400B3151B /* LightingTileDrawer.swift in Sources */,
+				8EAB385020E2DA2C0032EB98 /* SegmentedSensorView.swift in Sources */,
+				8E55425F20AA63740099728F /* ParmesanWallDrawer.swift in Sources */,
+				8E55425320AA412C0099728F /* Salak.swift in Sources */,
+				8E1E8E5420B6F0B80021C21D /* SquareDirection.swift in Sources */,
+				8E88C05220BCC16C000DD60D /* GeometryMapperFactory.swift in Sources */,
+				8E95575920C976EF00819156 /* SkylightController.swift in Sources */,
+				8ED2549120A526A9000CBA5F /* TemporalObject.swift in Sources */,
+				8E1E8E5620B6F0CC0021C21D /* SquareField.swift in Sources */,
+				8ED2545020A246E1000CBA5F /* Wall.swift in Sources */,
+				8E92B97020AD1F2A00183376 /* YogurtDrawer.swift in Sources */,
+				8E59117A20DBCAA70034450B /* HexagonPoint.swift in Sources */,
+				8E55424C20A9DE710099728F /* AcceleratorDrawer.swift in Sources */,
+				8E20BEBD20C355DE0065EF7D /* CIImage+ColorInit.swift in Sources */,
+				8E9EB2D720B5B88400A9F024 /* LightingMixer.swift in Sources */,
+				8E9EB2DB20B5BEC400A9F024 /* LightingColor.swift in Sources */,
+				8ED2546D20A48A78000CBA5F /* ColorMap.swift in Sources */,
+				8E55425520AA45490099728F /* Parmesan.swift in Sources */,
+				8E55425B20AA53940099728F /* ParmesanSequence.swift in Sources */,
+				8ED2545820A44B5E000CBA5F /* Point.swift in Sources */,
+				8E92B99320B02DAF00183376 /* UraborosEffect.swift in Sources */,
+				8E093D9920DBF49600A8FE27 /* HexagonFieldDrawer.swift in Sources */,
+				8E92B98120AEE54A00183376 /* GameEventMutators.swift in Sources */,
+				8E55425120AA344E0099728F /* ObjectsSequence.swift in Sources */,
+				8E7ACC9A20D27E98002BE214 /* MedusaVirusDrawer.swift in Sources */,
+				8ED2545E20A47B89000CBA5F /* StepsController.swift in Sources */,
+				8E59117C20DBCB3B0034450B /* HexagonDirection.swift in Sources */,
+				8E92B97420AD9B2100183376 /* Random.swift in Sources */,
+				8E59118420DBD5AB0034450B /* HexagonGeometryMapper.swift in Sources */,
+				8E7ACCD320D948E2002BE214 /* MedusaColonyEffect.swift in Sources */,
+				8E92B96220AB86B400183376 /* GameEffect.swift in Sources */,
+				8E1D927820D0239B00C0BE88 /* SkylightControllerFactory.swift in Sources */,
+				8E55424620A9C4C30099728F /* ReasonsManager.swift in Sources */,
+				8E92B96420AB8B6D00183376 /* FreezeEffect.swift in Sources */,
+				8E92B97F20AEE43E00183376 /* SnakeEvent.swift in Sources */,
+				8ED2546B20A488ED000CBA5F /* SquareFieldDrawer.swift in Sources */,
+				8ED254A520A7BB3F000CBA5F /* RealtimeTimer.swift in Sources */,
+				8ED2548920A510F2000CBA5F /* ObjectsGenerator.swift in Sources */,
+				8ED2549920A5D3EB000CBA5F /* FreezerDrawer.swift in Sources */,
+				8E59117E20DBCD580034450B /* HexagonField.swift in Sources */,
+				8E7ACCCC20D7FAFC002BE214 /* MedusaVirusGeneratorNode.swift in Sources */,
+				8E92B98F20AFB30600183376 /* DefaultSnake.swift in Sources */,
+				8ED2547E20A4AD6A000CBA5F /* UserInteractor.swift in Sources */,
+				8E7ACCBE20D2D449002BE214 /* MedusaVirusLayersFactory.swift in Sources */,
+				8E0DFBA120C172AF005562FD /* VerticesGradientLayer.swift in Sources */,
+				8ED2542F20A240AF000CBA5F /* AppDelegate.swift in Sources */,
+				8E7ACCC720D7EF28002BE214 /* ObjectsGeneratorNode.swift in Sources */,
+				8ED2548320A4D34B000CBA5F /* SalakDrawer.swift in Sources */,
+				8EAB384B20E2D59B0032EB98 /* SensorViewFactory.swift in Sources */,
+				8E92B96820ACE7FD00183376 /* ControlInversionEffect.swift in Sources */,
+				8EAB384620E1A1CE0032EB98 /* UIBezierPath+Polygon.swift in Sources */,
+				8ED2549320A5281E000CBA5F /* TemporalObjectDrawer.swift in Sources */,
+				8ED2547620A497E5000CBA5F /* SnakeBodyDrawer.swift in Sources */,
+				8ED2547820A49E2B000CBA5F /* GeometryMapper.swift in Sources */,
+				8E55424820A9CAD00099728F /* PauseManagerWrapper.swift in Sources */,
+				8ED2549720A5B709000CBA5F /* Freezer.swift in Sources */,
+				8ED2545620A2512A000CBA5F /* Snake.swift in Sources */,
+				8E92B9A020B4501600183376 /* LightingSource.swift in Sources */,
+				8ED2549D20A5FD7B000CBA5F /* AttachableObjectDrawer.swift in Sources */,
+				8E55424A20A9D8640099728F /* Accelerator.swift in Sources */,
+				8E9EB2D320B5B34800A9F024 /* LightingDescription.swift in Sources */,
+				8E20BEBF20C737760065EF7D /* GameControllerFactory.swift in Sources */,
+				8E55425920AA46440099728F /* ParmesanDrawer.swift in Sources */,
+				8E1D927420D00C9700C0BE88 /* DefaultSkylightController.swift in Sources */,
+				8ED2549520A5B2BC000CBA5F /* AttachableObject.swift in Sources */,
+				8E7ACC9620D07FAC002BE214 /* GradientLightingTileDrawer.swift in Sources */,
+				8E59118020DBCE9A0034450B /* HexagonGeometry.swift in Sources */,
+				8E1E8E5220B6F0900021C21D /* SquarePoint.swift in Sources */,
+				8E9EB2D120B5A02500A9F024 /* LightingTile.swift in Sources */,
+				8E0DFB7A20BD95D6005562FD /* LightingDrawingController.swift in Sources */,
+				8E92B99720B0482200183376 /* UraborosDrawer.swift in Sources */,
+				8ED2544420A241DA000CBA5F /* GameObject.swift in Sources */,
+				8E7ACCC420D3F8E5002BE214 /* MedusaInfectionEffect.swift in Sources */,
+				8E92B98920AF847300183376 /* ColorExtension.swift in Sources */,
+				8ED2548720A4FD76000CBA5F /* GameObjectDrawer.swift in Sources */,
+				8ED2547420A49304000CBA5F /* StepsControllerFactory.swift in Sources */,
+				8E92B98B20AF8AD800183376 /* DieSnakeEvent.swift in Sources */,
+				8E0DFB7D20BDA2DE005562FD /* TileGradientLayer.swift in Sources */,
+				8E92B97D20AEE11F00183376 /* SnakeEffect.swift in Sources */,
+				8E92B96C20ACF21400183376 /* Yogurt.swift in Sources */,
+				8E1E8E5820B6F14C0021C21D /* SquareGeometry.swift in Sources */,
+				8E92B96E20ACF3BC00183376 /* FermentedYogurt.swift in Sources */,
+				8E92B99520B0443000183376 /* Uraboros.swift in Sources */,
+				8EBC3DA820B777D9005FA782 /* Normalisation.swift in Sources */,
+				8ED2546920A48655000CBA5F /* Drawer.swift in Sources */,
+				8E92B97220AD911700183376 /* FermentedYogurtDrawer.swift in Sources */,
+				8E92B98720AF83A500183376 /* CorpseDrawer.swift in Sources */,
+				8E093D9620DBE47000A8FE27 /* UIBezierPath+LayersShapes.swift in Sources */,
+				8E1D927620D01A8900C0BE88 /* LightingUtils.swift in Sources */,
+				8E92B98320AF71BB00183376 /* CorpseSegment.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8ED2543220A240AF000CBA5F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8ED2543320A240AF000CBA5F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8ED2543720A240B3000CBA5F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8ED2543820A240B3000CBA5F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8ED2543B20A240B3000CBA5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8ED2543C20A240B3000CBA5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8ED2543E20A240B3000CBA5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L27B35HEP;
+				INFOPLIST_FILE = SigSnake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RZ.SigSnake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = none;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8ED2543F20A240B3000CBA5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L27B35HEP;
+				INFOPLIST_FILE = SigSnake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RZ.SigSnake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = none;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8ED2542620A240AF000CBA5F /* Build configuration list for PBXProject "SigSnake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ED2543B20A240B3000CBA5F /* Debug */,
+				8ED2543C20A240B3000CBA5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ED2543D20A240B3000CBA5F /* Build configuration list for PBXNativeTarget "SigSnake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ED2543E20A240B3000CBA5F /* Debug */,
+				8ED2543F20A240B3000CBA5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8ED2542320A240AF000CBA5F /* Project object */;
+}
